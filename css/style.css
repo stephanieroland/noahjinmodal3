@@ -156,7 +156,7 @@
 	.btn-preorder {
 		background: #fed330;
 		color: #fff;
-		padding: 20px 55px 17px;
+		padding: 20px 41px 17px;
 		font-size: 24px;
 		font-family: Hind Medium;
 	}
@@ -1395,7 +1395,7 @@
 		.tab-pane.active .content,
 		.tab-pane.active .question_title
 		 {
-			padding: 0 10%;
+			padding: 0 5%;
 		}
 		.modal .modal-dialog {
 		    height: calc(100vh + 8px);
