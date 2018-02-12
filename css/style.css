@@ -156,7 +156,7 @@
 	.btn-preorder {
 		background: #fed330;
 		color: #fff;
-		padding: 20px 41px 17px;
+		padding: 20px 30px 17px;
 		font-size: 24px;
 		font-family: Hind Medium;
 	}
@@ -446,13 +446,13 @@
 	.slider_area .slider_name {
 		color: #508ac7;
 	    padding-left: 30px;
-	    position: absolute;
+	   /* position: absolute;*/
 	    bottom: 45px;
 	    font-size: 17px;
 	    font-family: Hind Medium;
 	}
 	.slider_area .slider_address {
-		position: absolute;
+		/*position: absolute*/
 	    bottom: 20px;
 	    padding-left: 30px;
 	    font-family: Hind Light;
@@ -1451,7 +1451,7 @@
 			text-align: center;
 		}
 		#banner_section .banner_content .social_area {
-			padding-top: 30px;
+			padding-top: 0px;
 			text-align: center;
 		}
 		#banner_section .banner_content .social_area .separate:before {
@@ -1520,7 +1520,7 @@
 		.slider_area .slider_content {
 			font-size: 18px;
 			padding-top: 15%;
-			padding-right: 20%;
+			/*padding-right: 20%;*/
 		}
 		.slider_item .slider_area {
 			height: 250px;
