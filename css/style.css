@@ -65,11 +65,10 @@
 	#banner_section .banner_content > h1 {
 		font-size: 65px;
 	    font-weight: 700;
-	    font-family: Montserrat Bold;
 	}
 
 	#banner_section .banner_content > p {
-		font-size: 33px;
+		font-size: 26px;
 	    font-weight: 300;
 	    margin-top: 22px;
 	    font-family: Hind Light;
@@ -289,7 +288,7 @@
 	}
 	#inside_section .second_group {
 		position: absolute;
-		padding-top: 80px;
+		padding-top: 20px;
 		right: -60px;
 	}
 	#inside_section .second_group img {
