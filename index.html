@@ -6197,8 +6197,12 @@ window['_fs_namespace'] = 'FS';
             );
             */
             var variant= localStorage.getItem("variant");
-            window.open(
-                "https://noah-kit.myshopify.com/cart/add/?id="+variant+"&return_to=/checkout", "_blank" );            
+            var email= localStorage.getItem("email");
+         //   window.open(
+           //     "https://noah-kit.myshopify.com/cart/add/?id="+variant+"&return_to=/checkout", "_blank" );   
+            
+               window.open(
+                "https://noah-kit.myshopify.com/cart/"+variant+":1?checkout[email]="+email, "_blank" );  
         });
         
 
