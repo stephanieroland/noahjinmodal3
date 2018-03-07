@@ -5718,7 +5718,8 @@ window['_fs_namespace'] = 'FS';
 
             localStorage.setItem("plan", plan)
             console.log(localStorage.getItem('plan'));
-
+            
+            ga('send', 'event', 'emergencyplan', 'Click', 'Button', {});  
             
             mixpanel.people.append({
                  "$plan":plan,   
@@ -6068,14 +6069,10 @@ window['_fs_namespace'] = 'FS';
              function myTrim(x) {
                     return x.replace(/^\s+|\s+$/gm,'');
                 }
-             
-            if (validateForm(email)){
-          
-                // Set user attributes for mixpanel DB
+            
+                     // Set user attributes for mixpanel DB
             mixpanel.people.append({
         
-                    "$email":email,
-
 
                     "$homelat":homelat,
                     "$homelong":homelong,
@@ -6087,9 +6084,26 @@ window['_fs_namespace'] = 'FS';
                     //"$product-boosters":$('#boosters').is(':checked').toString(),
                     //"$product-dna":$('#dna').is(':checked').toString()
                 });
+             
+            if (validateForm(email)){
+          
+                // Set user attributes for mixpanel DB
+            mixpanel.people.append({
+        
+                    "$email":email,
+
+                    //  "$product-recovery":$('#recovery').is(':checked').toString(),
+                    //"$product-hydrate":$('#hydrate').is(':checked').toString(),
+                    //"$product-boosters":$('#boosters').is(':checked').toString(),
+                    //"$product-dna":$('#dna').is(':checked').toString()
+                });
+                
+                
                 // mixpanel.track('order');
                 //
             }
+            
+            
         });
     
        $('.continue-zipcode').click(function() {
