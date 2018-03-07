@@ -403,13 +403,13 @@
         }
         
         .checkout_area .left_footer {
-            top: calc(100vh - 100px);
+            /*top: calc(100vh - 100px);*/
             position: fixed;
         }
         .checkout_area .fixed-bottom-background {
                width: 100vw;
                 position: fixed;
-            top: calc(100vh - 100px);
+           /* top: calc(100vh - 100px);*/
             height: 100px;
         }
         

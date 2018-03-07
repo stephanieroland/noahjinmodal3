@@ -1004,13 +1004,19 @@
         text-transform: capitalize;
         font-family: Hind Regular;
         font-size: 18px;
-        padding-top: 60px;
+        padding-top: 45px;
     }
     .modal .medical_conditions {
         margin-top: 0px;
     }
     .medical_conditions .question_select_item {
-        margin-top: 30px;
+        margin-top: 15px;
+        height:120px
+    }
+  @media(max-width: 768px) {
+          .medical_conditions .question_select_item {
+          padding-top: 45px;
+    }
     }
     
     .items_area {
@@ -1150,9 +1156,12 @@
             font-size: 25px;
             padding-top: 22px;
         }
+           @media (min-width: 768px) {
         .medical_conditions .question_select_item {
             padding-top: 27px;
         }
+        }
+    
         .select_item_cover {
             width: 50%;
             float: left;
@@ -1448,7 +1457,7 @@
     }
     @media(max-width: 425px) {
         .medical_conditions .question_select_item.long_label {
-            padding: 16px;      
+            padding: 30px 16px 16px 16px;    
         }
     }
 /** end modal */
