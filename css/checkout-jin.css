@@ -12,20 +12,17 @@
         max-width: 1800px;
         margin: auto;
         height: 100vh;
-       /* min-height: 900px;*/
+        min-height: 900px;
     }
     .checkout_area .left_header {
         padding: 0px 15px;
-        min-height: 800px;
-        margin-bottom: 80px;
-
     }
     .checkout_area .left_cart_area {
-        height: calc(100vh - 60px);
-       /* min-height: 802px;*/
+        height: calc(100vh - 98px);
+        min-height: 802px;
     }
     .checkout_area .checkout_header .nav_item {
-        padding: 15px 15px;
+        padding: 35px 15px;
         display: inline-block;
         font-size: 20px;
         color: black;
@@ -67,17 +64,9 @@
     }
 
     .checkout_area .left_header .nav_template {
-      /*  padding: 20px 15px 0px 15px;*/
-    
+        padding: 20px 15px 0px 15px;
+        border-bottom: 3px solid #eaeaea;
     }
-
-  .checkout_area .left_header .nav_template .nav_title{
-          /*border-bottom: 3px solid #eaeaea;*/
-    
-    }
-
-
-  
     .checkout_area .left_header .nav_template label {
         font-family: Hind Medium;
         font-size: 25px;
@@ -93,65 +82,31 @@
         margin-left: -15px;
         margin-right: -15px;
     }
-    
-
-    
-      .checkout_area .left_header .nav_template .product  {
-      border-bottom: 1.8px solid #eaeaea;
-        padding: 0px;
-        margin-left: 5px;
-            
-    }
-
-
-    .checkout_area .left_header .nav_template .product label {
-        font-family: Hind Regular;
-        font-size: 19px;
-    }
-    .checkout_area .left_header .nav_template .product p {
-        margin: 0;
-        padding-top: 27px;
-        font-size: 20px;
-        font-family: Hind Regular;
-        color: #02c0e2;
-    }
-
-     .checkout_area .left_header .nav_template .product a {
-        color: #333;
-         
-    }
-     .checkout_area .left_header .nav_template .product a:active {
-        color: #02c0e2;
-         
-    }
 
     .checkout_area .left_footer {
-        /*margin: 0 -15px;
-       padding: 15px 15px;*/
+        margin: 0 -15px;
+        padding: 15px 15px;
         background: transparent;
-      /*  bottom: 5px;
+        bottom: 0;
         position: absolute;
-        z-index: 2;*/
+        z-index: 2;
         width: 100%;
     }
 
     .checkout_area .fixed-bottom-background {
-        display: inline-block;
-        left: 0;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         width: 50vw;
         background: #424242;
-        height: 80px;
+        height: 90px;
+        right: 0;
     }
 
     .checkout_area .continue_cart_btn,
     .checkout_area .update_cart_btn {
-        /*padding-top: 15px;
-        padding-bottom: 15px;*/
+        padding-top: 15px;
+        padding-bottom: 15px;
         font-size: 18px;
-        color: #eee;
-        
     }
     .checkout_area .content_item {
         border: 1px solid #ddd;
@@ -218,35 +173,15 @@
         list-style: none;
         padding-left: 0;
     }
-  .checkout_area .left_content_premium {
-        padding: 20px 15px 0px 15px;
-        overflow: auto;
-        height: calc(100% - 330px);
-    }
-    .checkout_area .left_content_premium ul {
-        list-style: none;
-        padding-left: 0;
-    }
-  .checkout_area .left_content_plan {
-        padding: 20px 15px 0px 15px;
-        overflow: auto;
-        height: calc(100% - 330px);
-    }
-    .checkout_area .left_content_plan ul {
-        list-style: none;
-        padding-left: 0;
-    }
     .checkout_area .read_more_label {
         margin-left: 30px;
-          font-family: Hind Regular;
-        color: #02c0e2 !important;
     }
 
     .checkout_area .cart_detail_area {
         background-image: url(../img/check-back.png);
         background-size: cover;
         background-repeat: no-repeat;
-       /* width: 50vw;*/
+        width: 50vw;
         height: 100%;
         margin-left: -15px;
         top: 0;
@@ -262,7 +197,7 @@
         overflow: auto;
     }
     .checkout_area .cart_detail_area .detail_img {
-        height: 250px;
+        height: 400px;
         overflow:  hidden;
         background-size: cover;
         background-repeat: no-repeat;
@@ -279,11 +214,6 @@
         font-size: 17px;
         color: #8e8989;
         font-family: Hind Regular;
-    }
-
-      .checkout_area .expand_content  {
-        font-family: Hind Regular; 
-          
     }
 
     .checkout_area .expand_content .content_left {
@@ -333,23 +263,18 @@
     .checkout_area .continue_cart_btn i {
         margin-left: 15px;
     }
-.checkout_area .continue_cart_btn {
-            background: #02c0e2;
-    color: #eee !important;
-    border-radius: 90px;
-        
-    }
-    
     .checkout_area .content_right_area .quantity_label{
 
     }
+    @media(min-width: 992px) and (max-width: 1439px) {
         .checkout_area .left_footer .btn-full-width {
-            padding: 15px 15px;
+            padding: 20px 14px;
             font-size: 15px;
         }
         .checkout_area .fixed-bottom-background {
-            height: 80px;
+            height: 100px;
         }
+    }
     @media (min-width: 992px) and (max-width: 1260px) {
         .checkout_area .detail_content .detail_items {
             height: 46px;
@@ -451,8 +376,6 @@
         .checkout_area .mobile_view {
             display: block;
         }
-        
-        
     }
     @media (min-width: 768px) and (max-width: 991px)  {
         .checkout_area .border_template .border_template_item .border_value {
@@ -474,30 +397,11 @@
         .checkout_area .left_content {
             height: calc(100% - 320px);
         }
-        
-        .checkout_area .left_footer {
-            /*top: calc(100vh - 100px);*/
-            position: fixed;
-        }
-        .checkout_area .fixed-bottom-background {
-               width: 100vw;
-                position: fixed;
-           /* top: calc(100vh - 100px);*/
-            height: 100px;
-        }
-        
-        
     }
     @media(max-width: 767px) {
-        .checkout_area .checkout_header .nav_item {
-        padding: 30px 15px 15px;
-
+        #order_modal .modal-dialog .modal-content .modal-body {
+            min-height: 568px;
         }
-           .checkout_area .checkout_header .nav_item .checkoutbutton{
-        padding: 15px 15px 15px;
-
-        }
-        
         .checkout_area .left_header .nav_template * {
             text-align: center;
         }
@@ -541,18 +445,17 @@
             text-align: center;
         }
         .checkout_area .fixed-bottom-background {
-            height: 100px;
+            height: 200px;
         }
         .checkout_area .continue_cart_btn {
-            /*margin-bottom: 18px;*/
-             margin-bottom: 5px;
+            margin-bottom: 18px;
         }
         .checkout_area .update_cart_btn {
             margin-bottom: 15px;
         }
         .checkout_area .left_content {
             margin-bottom: 200px;
-            /*height: auto;*/
+            height: auto;
         }
         .expand_header,
         .checkout_area .expand_header .align-right {
@@ -564,19 +467,11 @@
         }
         .checkout_area .left_cart_area .fixed-bottom-background {
             position: fixed;
-            /*top: calc(100vh - 192px);*/
-            bottom: 0;
-
-            left: 0;
-            right: 0;
+            top: calc(100vh - 192px);
         }
         .checkout_area .left_cart_area .left_footer {
-           /* top: calc(100vh - 175px);*/
-            bottom: 0;
+            top: calc(100vh - 175px);
             position: fixed;
-            
-            left: 0;
-            right: 0;
         }
         .checkout_area {
             height: 100vh;
@@ -591,183 +486,4 @@
             position: inherit;
         }
     }
-    @media(max-width: 768px) {
-     
-         .nomobile {
-            display: none !important;
-        }
-        
-        
-      
-    }
 
-    @media(min-width: 768px) {
-     
-         .nodesktop {
-            display: none !important;
-        }
-}
-.detail_content_right{
-    padding: 25px;
-    background: white;
-    opacity: 0.9;
-    top: 100px;
-    position: absolute;
-    margin-left: 30px;
-    margin-right: 45px;
-    border-radius: 5px;
-    max-height: 700px;
-    font-family: Hind Regular;
-
-    
-}
-.detail_content_right p{
-   font-size: 16px;
-    
-    
-}
-.description_template{
-    padding: 15px;
-    font-family: Hind Regular;
-    font-size: 15px;
-    background: #eee;
-    
-}
-.detail_title_right{
-  /* padding: 15px;*/
-    color: #02c0e2;
-    font-family: Hind Bold;
-    font-size: 36px;
-    text-align: center;
-       /* padding-top: 40px*/
-    
-}
-.price_cart{
-      text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: #eee !important;
-    font-size: 18px;
-    
-}
-
-.description_title{
-    font-weight: bold;
-    text-align: center;
-    font-size:20px;
-    
-    
-}
-.border_label{
-    font-size: 14px; 
-    color: gray;
-}
-.footer_price{
-        font-size: 25px;
-    font-family: Hind Medium;
-}
-.basics {
-    font-size:28px !important;
-    font-family: Hind SemiBold !important;
-}
-.img-block img{
-       border: solid white 4px;
-    border-radius: 50%;
-    position: absolute;
-    top: -75px;
-
-    left: 50%;
-    width: 100px;
-    margin-left: -50px;
-}
-.fas fa-times{
-    color:red;
-}
-.footer_center{
-    
-    display: flex;
-    flex-flow: row nowrap;
-    
-    justify-items: stretch;
-    align-items: center;
-        font-size: 18px;
-    /* display: inline; */
-    color: #eee;
-        height: 80px;
-}
-.price_footer{
-    margin-left: 40px;
-    margin-right: 30px;  
-}
-.checkoutbutton{
-    
-    max-height:50px; 
-    max-width:350px;
-    
-}
-
-/* Customize the label (the container) */
-.container_checkbox {
-  display: inline-block;
-  position: relative;
-  padding-left: 35px;
-  /*margin-bottom: 12px;*/
-  cursor: pointer;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.container_checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: -5px;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
-.container_checkbox:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.container_checkbox input:checked ~ .checkmark {
-  background-color: #02c0e2;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.container_checkbox input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.container_checkbox .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}

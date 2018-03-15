@@ -5,6 +5,7 @@
     }
     a {
         color: #02c0e2;
+        cursor: pointer;
     }
     a:hover {
         text-decoration: none;
@@ -215,7 +216,7 @@
 
 
     #about_section {
-        padding-top: 130px;
+       padding-top: 50px;
         position: relative;
     }
     #about_section .about_left img {
@@ -752,6 +753,7 @@
     #order_modal .modal-dialog .modal-content {
         box-shadow: none;
         border: none;
+     
         border-radius: 0;
     }
     .modal-dialog .modal-content .modal-header,
@@ -1071,6 +1073,7 @@
     }
     #order_modal .modal-body .container-fluid {
         padding: 0;
+        overflow-y: scroll;
     }
     .float-modal {
         bottom: 56px;
@@ -1148,7 +1151,8 @@
             padding: 0 5%;
         }
         .modal .modal-dialog {
-            height: calc(100vh + 8px);
+           /* height: calc(100vh + 8px);*/
+             height: calc(100vh);
         }
         .question_select_item {
             height: 80px;
@@ -1551,12 +1555,13 @@
     .medical_conditions .question_select_item{
         word-wrap: break-word;
     }
+}
 
     body.modal-open {
         /* overflow-y: hidden !important;
          position: fixed;
          padding-right:0px !important;*/
-            width: 100vw;
+        width: 100vw;
         height: 100vh;
         top: 0;
         left: 0;
@@ -1565,4 +1570,8 @@
         position: fixed;
         overflow: hidden;
 
+
     }
+
+
+ 
